@@ -11,12 +11,13 @@ const poemLines = [
   "it’d left the nest a little too soon. i wonder if",
   "its mother knew that ",
   "it would be too windy, too early",
-  "too late. the nights these days are ",
+  "too late. the nights",
+  "these days are ",
   "getting colder. i knelt down and ",
-  "cradled it close, spread ",
-  "its wings before covering ",
-  "it with earth, the practiced motion of ",
-  "kneeling in dirt and hiding and crying over",
+  "cradled it close, closer: spread ",
+  "its wings before covering it with earth", 
+  "the practiced motion of kneeling in",
+  "dirt and hiding and crying over",
   "a tiny little dead thing",
   "somehow giving me deja vu."
 ];
@@ -34,7 +35,7 @@ function typeLine(line, index, callback) {
       if (charIndex < line.length) {
           span.textContent += line.charAt(charIndex);
           charIndex++;
-          setTimeout(typeCharacter, 40);
+          setTimeout(typeCharacter, 45);
       } else {
           span.style.opacity = 1;
           if (callback) callback();
